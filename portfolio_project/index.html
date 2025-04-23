@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Register</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Left Section -->
+        <div class="form-container">
+            <div class="switch">
+                <button id="showLogin">Login</button>
+                <button id="showRegister">Register</button>
+            </div>
+
+            <!-- Login Form -->
+            <form id="loginForm" action="login.php" method="POST">
+                <h2>Login</h2>
+                <input type="email" name="email" required placeholder="Email">
+                <input type="password" name="password" required placeholder="Password">
+                <button type="submit">Login</button>
+                <p><a href="#">Forgot Password?</a></p>
+            </form>
+
+            <!-- Register Form -->
+            <form id="registerForm" action="register.php" method="POST" style="display: none;">
+                <h2>Register</h2>
+                <input type="text" name="name" required placeholder="Full Name">
+                <input type="email" name="email" required placeholder="Email">
+                <input type="password" name="password" required placeholder="Password">
+                <button type="submit">Register</button>
+            </form>
+        </div>
+
+        <!-- Right Section (Background & Design) -->
+        <div class="side-panel">
+            <h1>Welcome to Portfolio</h1>
+            <p>Manage and create your professional portfolio with ease.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
